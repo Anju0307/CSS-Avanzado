@@ -14,37 +14,32 @@ body{
 }
 
 .caja{
-    background: #025;
+    background: yellow;
     height: 100px;
     width: 100px;
     border-radius: 3px;
     margin: 20px;
-    transition-duration: 2s, 3s;
     position: relative;
-    left: 0;
+    animation-name: desplazar;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 1s;
 }
 
-.container:hover > .caja{
-    background: lightgreen;
-    left: 80%;
-}
+@keyframes desplazar{
+    from{
+        position: relative;
+        left: 0;
+        background: #025;
+    }
+    50%{
+       background: red; 
+    }
 
-.caja:first-child{
-    transition-timing-function: linear;
-}
-
-.caja:nth-child(2){
-    transition-timing-function: ease;
-}
-
-.caja:nth-child(3){
-    transition-timing-function: ease-in;
-}
-
-.caja:nth-child(4){
-    transition-timing-function: ease-out;
-}
-
-.caja:nth-child(5){
-    transition-timing-function: ease-in-out;
+    100%{
+        left: 80%;
+        background: green;
+    }
 }
