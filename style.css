@@ -9,23 +9,16 @@ body{
 }
 
 .container{
-    background: #86f;
-    padding: 20px 5px;
+    width: 350px;
+    height: 200px;
+    margin: 40px;
+    padding: 30px;
+    background-image: url(https://wallpaperaccess.com/full/3097725.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; /* para que no se repita*/
+    background-origin: padding-box; /* origen de la imagen */
+    /*background-clip: border-box; recorta la imagen */
+    /*background-position: top center; posicion de la imagen*/
+    background-attachment: fixed;
 }
 
-.caja{
-    background: yellow;
-    height: 100px;
-    width: 100px;
-    border-radius: 3px;
-    margin: 20px;
-    display: flex;
-    transition: transform 1s;
-    /*transform: translate(); Se mueve dependiendo del eje */
-    /*transform: scale(); modifica la escala */
-    /* https://bennettfeely.com/clippy/ */
-    /* https://www.w3schools.com/cssref/css3_pr_transform.asp */
-}
-b{
-    margin: auto;
-}
