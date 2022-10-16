@@ -2,23 +2,31 @@
     font: 1em sans-serif;
     font-weight: 100;
 }
+/* Para crear variables */
+/* Tambien se puede colocar dentro de contenedor pero no
+se puede colocar afuera del contenedor lo mejor es hacer la
+variable global */
+:root{
+    --color-rojo: #f20;
+}
 
 body{
     margin: 0;
     padding: 0;
 }
 
-.container{
-    width: 350px;
-    height: 200px;
-    margin: 40px;
+div{
     padding: 30px;
-    background-image: url(https://wallpaperaccess.com/full/3097725.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat; /* para que no se repita*/
-    background-origin: padding-box; /* origen de la imagen */
-    /*background-clip: border-box; recorta la imagen */
-    /*background-position: top center; posicion de la imagen*/
-    background-attachment: fixed;
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+}
+
+.container{
+    background: var(--color-rojo);
+}
+
+.container2{
+    background: lightgreen;
 }
 
