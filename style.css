@@ -19,28 +19,13 @@ body{
     width: 100px;
     border-radius: 3px;
     margin: 20px;
-    position: relative;
-    animation-name: desplazar;
-    animation-duration: 2s;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
-    animation-fill-mode: both;
-    animation-delay: 1s;
-    animation-timing-function:cubic-bezier(.17,.67,.36,.08);
+    display: flex;
+    transition: transform 1s;
+    /*transform: translate(); Se mueve dependiendo del eje */
+    /*transform: scale(); modifica la escala */
+    /* https://bennettfeely.com/clippy/ */
+    /* https://www.w3schools.com/cssref/css3_pr_transform.asp */
 }
-
-@keyframes desplazar{
-    from{
-        position: relative;
-        left: 0;
-        background: #025;
-    }
-    50%{
-       background: red; 
-    }
-
-    100%{
-        left: 80%;
-        background: green;
-    }
+b{
+    margin: auto;
 }
