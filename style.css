@@ -1,37 +1,30 @@
 *{
     font: 1em sans-serif;
     font-weight: 100;
+    
 }
 
 body{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .container{
-    filter: contrast(20);
-    background: #fff;
-}
-
-.caja1{
-    display: inline-block;
-    width: 150px;
-    height: 150px;
+    padding: 20px;
+    font-size: 2rem;
     background: red;
-    margin: 40px;
-    border-radius: 50%;
-    filter: blur(20px);
+    /*direction: rtl;  Direccion */
+    /*letter-spacing: 5px; Espacio en las que separan las letras*/
+
 }
 
-.caja1:first-child{
-    animation: transladar 1.6s alternate infinite;
+p{
+    font-size: 2rem;
 }
 
-@keyframes transladar{
-    0%{
-        transform: translate(0);
-    }
-    100%{
-        transform: translate(160px);
-    }
+#container{
+    background: #59f;
+    user-select: none; /* No deja seleccionar al usuario */
+    text-shadow: 10%;
 }
